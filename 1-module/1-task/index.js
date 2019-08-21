@@ -4,6 +4,13 @@
  * @param {number} n index
  * @returns {number}
  */
-function pow(m, n) {
+let x = prompt('Ведите x', '');
+let n = prompt('Ведите n', '');
 
+function pow(x, n){
+    return x**n;
 }
+
+let res = pow(x, n);
+alert(res);
+
