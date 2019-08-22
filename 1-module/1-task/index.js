@@ -4,13 +4,22 @@
  * @param {number} n index
  * @returns {number}
  */
-let x = prompt('Ведите x', '');
-let n = prompt('Ведите n', '');
+function pow(x, n) {
+    let result = x;
 
-function pow(x, n){
-    return x**n;
+    for (let i = 1; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
 }
 
-let res = pow(x, n);
-alert(res);
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+    alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+} else {
+    alert( pow(x, n) );
+}
 
