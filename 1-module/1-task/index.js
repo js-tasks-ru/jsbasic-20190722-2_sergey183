@@ -7,10 +7,14 @@
 let x = prompt('Ведите x', '');
 let n = prompt('Ведите n', '');
 
+if (n < 0){
+    alert('Введите натуральное число!');
+    n = prompt('Ведите n', '');
+}
+
 function pow(x, n){
     return x**n;
 }
 
-let res = pow(x, n);
-alert(res);
+alert(pow(x, n));
 
